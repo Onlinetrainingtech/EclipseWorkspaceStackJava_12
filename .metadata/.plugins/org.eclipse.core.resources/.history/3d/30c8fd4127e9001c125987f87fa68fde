@@ -1,0 +1,24 @@
+class Product
+{
+	void addStaff()
+	{
+		
+	}
+	void addStudent()
+	{
+		
+	}
+}
+
+
+
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

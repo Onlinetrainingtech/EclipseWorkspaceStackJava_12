@@ -1,0 +1,29 @@
+class Product
+{
+	int id=1001;
+	void addStaff()
+	{
+		
+	}
+	void addStudent()
+	{
+		
+	}
+}
+
+
+
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		
+		Product p1=new Product();
+		p1.addStaff();
+		p1.addStudent();
+
+	}
+
+}
