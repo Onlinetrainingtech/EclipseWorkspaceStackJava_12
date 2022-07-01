@@ -11,6 +11,10 @@ class Demo
 		{
 			System.out.println("Please check the Program"+t);
 		}
+		finally
+		{
+			//code
+		}
 		
 		System.out.println("Normal flow");
 	}
