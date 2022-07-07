@@ -27,4 +27,8 @@
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.lang.IllegalMonitorStateException"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="AdminHomePage"/>
+    <fullyQualifiedTypeName name="AdminLogin"/>
+    <fullyQualifiedTypeName name="UserLogin"/>
+    <fullyQualifiedTypeName name="ReigsterPage"/>
 </qualifiedTypeNameHistroy>
