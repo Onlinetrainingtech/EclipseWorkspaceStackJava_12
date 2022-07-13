@@ -1,3 +1,9 @@
 create table admin(adminname varchar(60),adminpass varchar(50))
 
 insert into admin values('admin','admin')
+
+create table product(pid integer,pname varchar(100),nop integer,price integer)
+
+select * from product
+
+create table userreg(uname varchar(100),pass varchar(100),gender varchar(100),address varchar(100))

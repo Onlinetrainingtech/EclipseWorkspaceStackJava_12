@@ -47,6 +47,12 @@ public class AdminHomePage extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("AddProduct");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				new ProductDetails().setVisible(true);
+			}
+		});
 		btnNewButton.setBounds(156, 88, 100, 23);
 		contentPane.add(btnNewButton);
 		

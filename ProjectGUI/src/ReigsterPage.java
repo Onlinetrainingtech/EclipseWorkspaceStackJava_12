@@ -5,8 +5,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class ReigsterPage extends JFrame {
 
@@ -91,7 +97,31 @@ public class ReigsterPage extends JFrame {
 		panel.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Register");
+		final JButton btnNewButton = new JButton("Register");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String u1=textField.getText();
+					String p1=textField_1.getText();
+					String gen=textField_2.getText();
+					String addr=textField_3.getText();
+					
+					String str1="insert into userreg values('"+u1+"','"+p1+"','"+gen+"','"+addr+"')";
+							
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/anveshjava","sa","");
+					Statement stmt=conn.createStatement();
+					stmt.executeUpdate(str1);
+					JOptionPane.showMessageDialog(btnNewButton,"Inserted..");	
+				}
+				catch(Exception t)
+				{
+					
+				}
+			}
+		});
 		btnNewButton.setBounds(90, 280, 89, 23);
 		panel.add(btnNewButton);
 		
